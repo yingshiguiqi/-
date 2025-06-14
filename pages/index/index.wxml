@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="character-card">
+    <image class="character-img" src="{{gender === 'male' ? '/images/characters/hero/male.png' : '/images/characters/hero/female.png'}}" mode="aspectFit"></image>
+    <view class="status-item">姓名: {{name}}</view>
+    <view class="status-item">境界: 第{{level}}层</view>
+    <view class="status-item">修为: {{cultivation}}/100</view>
+    <view class="status-item">灵力: {{power}}</view>
+  </view>
+
+  <button class="cultivate-btn" bindtap="cultivate">修炼</button>
+  <button class="switch-btn" bindtap="switchGender">切换角色</button>
+</view>

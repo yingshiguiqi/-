@@ -1,0 +1,41 @@
+## 贴图资源使用说明
+
+### 角色图片规范
+1. 分辨率建议：
+   - 主角立像：750x1334像素 (1:1.78比例)
+   - 头像图标：200x200像素 (正方形)
+   - 技能特效：300x300像素 (透明背景PNG)
+
+2. 图片格式：
+   - 推荐使用PNG格式(支持透明通道)
+   - 也可使用JPG(适合照片类图片)
+   - 避免使用GIF(小程序对动图支持有限)
+
+3. 大小限制：
+   - 单张图片建议不超过500KB
+   - 所有图片总大小不超过2MB(影响加载速度)
+
+### 贴图存放位置
+项目目录结构：
+```
+项目目录/
+├── images/
+│   ├── characters/   # 角色贴图
+│   │   ├── hero/     # 主角
+│   │   ├── npc/      # NPC角色
+│   ├── effects/      # 特效
+│   ├── ui/           # 界面元素
+└── ...
+```
+
+### 代码引用示例
+WXML中使用：
+```html
+<image src="/images/characters/hero/main.png" mode="aspectFill"></image>
+```
+
+WXSS中使用：
+```css
+.avatar {
+  background-image: url('/images/characters/hero/avatar.png');
+}

@@ -1,0 +1,14 @@
+{
+  "name": "cultivation-app",
+  "version": "1.0.0",
+  "description": "修仙主题微信小程序",
+  "main": "app.js",
+  "scripts": {
+    "dev": "wechat-miniprogram-cli dev",
+    "build": "wechat-miniprogram-cli build"
+  },
+  "dependencies": {
+    "wechat-miniprogram-cli": "^1.0.0"
+  },
+  "license": "MIT"
+}

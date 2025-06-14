@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "修仙之路",
+    "navigationBarBackgroundColor": "#4a2c12",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f8f1e0"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

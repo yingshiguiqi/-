@@ -1,0 +1,13 @@
+{
+  "description": "修仙主题微信小程序",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "postcss": true,
+    "minified": true
+  },
+  "compileType": "miniprogram",
+  "appid": "touristappid",
+  "projectname": "修仙之路",
+  "miniprogramRoot": "./"
+}
