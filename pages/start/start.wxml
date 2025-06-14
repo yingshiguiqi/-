@@ -1,0 +1,39 @@
+<view class="container">
+  <view class="title">修仙之路</view>
+  
+  <view class="form-group">
+    <text class="label">角色名称:</text>
+    <input class="input" placeholder="请输入角色名称" bindinput="onNameInput"/>
+  </view>
+
+  <view class="form-group">
+    <text class="label">选择修炼体系:</text>
+    <picker bindchange="bindPathChange" value="{{pathIndex}}" range="{{pathArray}}">
+      <view class="picker">当前选择：{{pathArray[pathIndex]}}</view>
+    </picker>
+  </view>
+
+  <view class="form-group">
+    <text class="label">选择性别:</text>
+    <view class="gender-options">
+      <view 
+        class="gender-option {{gender === 'male' ? 'active' : ''}}" 
+        bindtap="selectGender" 
+        data-gender="male"
+      >
+        <image src="/images/characters/hero/male.png" mode="aspectFit"></image>
+        <text>男修士</text>
+      </view>
+      <view 
+        class="gender-option {{gender === 'female' ? 'active' : ''}}" 
+        bindtap="selectGender" 
+        data-gender="female"
+      >
+        <image src="/images/characters/hero/female.png" mode="aspectFit"></image>
+        <text>女修士</text>
+      </view>
+    </view>
+  </view>
+
+  <button class="start-btn" bindtap="startGame" disabled="{{!name || !gender}}">开始修仙</button>
+</view>

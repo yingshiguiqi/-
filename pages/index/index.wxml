@@ -1,12 +1,13 @@
 <view class="container">
   <view class="character-card">
     <image class="character-img" src="{{gender === 'male' ? '/images/characters/hero/male.png' : '/images/characters/hero/female.png'}}" mode="aspectFit"></image>
-    <view class="status-item">姓名: {{name}}</view>
-    <view class="status-item">境界: 第{{level}}层</view>
-    <view class="status-item">修为: {{cultivation}}/100</view>
-    <view class="status-item">灵力: {{power}}</view>
+    <view class="status-item">道号: {{name}}</view>
+    <view class="status-item">修炼体系: {{path}}</view>
+    <view class="status-item">境界: {{realm}}期</view>
+    <view class="status-item">进度: {{progress.toFixed(1)}}%</view>
+    <view class="status-item">{{path=='修真'?'灵力':path=='修魔'?'魔力':path=='修妖'?'妖力':path=='修佛'?'佛力':'冥力'}}: {{power.toFixed(0)}}</view>
+    <progress percent="{{progress}}" stroke-width="6" activeColor="#8b5a2b" backgroundColor="#d4c7a8"/>
   </view>
 
   <button class="cultivate-btn" bindtap="cultivate">修炼</button>
-  <button class="switch-btn" bindtap="switchGender">切换角色</button>
 </view>

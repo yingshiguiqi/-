@@ -19,6 +19,12 @@
 .status-item {
   margin: 10px 0;
   font-size: 16px;
+  color: #5c3a21;
+}
+
+progress {
+  width: 100%;
+  margin: 15px 0;
 }
 
 .character-img {
@@ -38,13 +44,4 @@
   border-radius: 30px;
   font-size: 18px;
   box-shadow: 0 4px 8px rgba(139, 90, 43, 0.3);
-}
-
-.switch-btn {
-  margin-top: 15px;
-  padding: 10px 30px;
-  background-color: #6b8c42;
-  color: white;
-  border-radius: 20px;
-  font-size: 16px;
 }
